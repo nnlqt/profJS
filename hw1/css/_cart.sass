@@ -1,0 +1,176 @@
+.cart
+    display: flex
+    justify-content: space-between
+    margin-top: 96px
+    margin-bottom: 128px
+
+    &__box
+        display: flex
+        box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13))
+        border: 1px rgba(234, 234, 234, 1)
+        margin-bottom: 40px
+        max-width: 734px
+
+    &__filling
+        padding: 22px 22px 62px 31px
+
+    &__filling_top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 42px
+
+    &__filling_heading
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $colorContent
+        width: 262px
+
+    &__exit
+        margin-top: 8px
+        margin-left: 56px
+        &_mob
+            display: none
+
+    &__characteristics
+        display: flex
+
+    &__filling_text
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+
+    &__characteristics
+        margin-bottom: 8px
+
+    &__customize
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        margin-left: 8px
+        &_price
+            margin-left: 8px
+            color: $selectColor
+            +centerColumns()
+            font-size: 22px
+            line-height: 26px
+        &_quantity
+            border: 1px solid #EAEAEA
+            width: 44px
+            height: 24px
+            font-size: 18px
+            line-height: 22px
+            color: #656565
+            +centerColumns()
+            margin-left: 24px
+
+    &__buttons
+        margin-top: 72px
+        display: flex
+        justify-content: space-between
+
+    &__action
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $colorContent
+        border: 1px solid #A4A4A4
+        padding: 16px 40px
+        transition: all .5s
+        &:hover
+            color: #FFFFFF
+            background-color: $selectColor
+
+    &__right
+        width: 360px
+
+    &__adress
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        margin-bottom: 20px
+
+    &__form
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: $colorContent
+        width: 360px
+        height: 45px
+        padding-left: 16px
+        padding-right: 16px
+        margin-bottom: 20px
+        border: 1px solid #A4A4A4
+        outline: none
+        box-sizing: border-box
+
+    &__submit
+        font-style: normal
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        padding: 10px 14px
+        border: 1px solid #A4A4A4
+        outline: none
+        transition: all .3s
+        &:hover
+            transform: scale(1.05)
+
+    &__total
+        display: flex
+        flex-direction: column
+        background: #F5F3F3
+        margin-top: 56px
+        padding: 38px 42px 44px 42px
+
+    &__sub
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 12px
+        &_left
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+        &_right
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+            margin-left: 32px
+
+    &__grand
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 21px
+        &_left
+            font-size: 16px
+            line-height: 19px
+            color: $colorContent
+        &_right
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $selectColor
+            margin-left: 32px
+
+    &__checkout
+        padding: 16px 42px
+        margin-top: 16px
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        background-color: $selectColor
+        transition: all .3s
+        &:hover
+            transform: scale(1.05)

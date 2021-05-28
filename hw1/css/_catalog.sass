@@ -1,0 +1,170 @@
+.breadcrumbs
+    background: #F8F3F4
+    height: 148px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 38px
+
+    &__arrivals
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor
+
+    &__nav
+        display: flex
+        list-style-type: none
+
+    &__link
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $selectColor
+
+    &__list
+        &:not(:last-child)::after
+            content: "/"
+            margin-right: 8px
+            margin-left: 8px
+        &:last-child a
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: $selectColor
+
+.filter-sort
+    display: flex
+
+.filter
+    margin-right: 30px
+    position: relative
+    width: 360px
+    &__summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
+
+    &__svg_mob
+        display: none
+
+    &__details
+        padding: 13px 13px 16px 16px
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        width: 100%
+        transition: all .5s
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            outline-style: none
+            & .filter__summary
+                color: $selectColor
+            & path
+                fill: $selectColor
+
+    &__details-in
+        margin-top: 16px
+        &[open] .filter__heading-in
+            color: $selectColor
+
+    &__summary-in
+        border-left: 5px solid $selectColor
+
+    &__heading-in
+        padding: 8px 0 11px 11px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        display: block
+        color: #6F6E6E
+        border-bottom: 1px solid #EBEBEB
+
+    &__ul
+        list-style-type: none
+        padding-left: 17px
+        padding-top: 24px
+        & a
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+
+.sort
+    padding-top: 13px
+    display: flex
+    justify-content: center
+    gap: $gap * 5
+    position: relative
+
+    &__summary
+        display: block
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+    &__img
+        margin-left: 10px
+
+    &__size
+        margin-left: 60px
+        padding-left: 10px
+        position: absolute
+        transition: all .5s
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            z-index: 100
+
+    &__form
+        width: 80px
+        max-height: 104px
+        padding: 10px 0
+        box-sizing: border-box
+        gap: $gap - 12px
+        display: flex
+        flex-direction: column
+
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #6F6E6E
+
+.catalog__lots
+    margin-top: 66px
+
+.lots__navigation
+    +centerColumns()
+
+.pagination
+    +centerColumns()
+    margin-top: 48px
+    padding: 12px 16px
+    border: 1px solid #EBEBEB
+    width: fit-content
+
+    &__block
+        display: flex
+        gap: $gap
+
+    &__item
+        list-style-type: none
+
+    &__link
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: rgba(196, 196, 196, 1)
+        &:hover
+            color: $selectColor
