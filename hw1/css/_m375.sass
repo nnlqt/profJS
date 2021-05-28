@@ -1,0 +1,202 @@
+@media (max-width: 767px)
+    .center
+        padding-left: calc(50% - 212px)
+        padding-right: calc(50% - 212px)
+
+    .header
+        &__right
+            gap: 0
+        &__icons
+            &:not(:last-child)
+                margin-right: 8px
+            &_desc
+                display: none
+            &_mob
+                display: block
+
+    .nav
+        width: 100%
+        top: 0
+        min-height: 100vh
+
+        &__links-menu
+            display: flex
+            justify-content: center
+            gap: 50px
+            margin-bottom: 8px
+
+    #switcher:checked ~ .nav
+        right: -100%
+
+    .promo
+        height: 363px
+        display: flex
+        justify-content: center
+        &__text
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-top: 0
+        &__img
+            display: none
+
+    .sale
+        padding-bottom: 64px
+        &__top
+            flex-direction: column
+            row-gap: 32px
+        &__item
+            height: 247px
+        &__bottom
+            height: 111px
+            margin-top: 32px
+
+    .benefit
+        padding-left: 14px
+        padding-right: 14px
+
+        &__item
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+
+    .subscribe
+        height: 550px
+
+        &__quot
+            font-size: 18px
+            line-height: 22px
+
+        &__heading
+            font-size: 24px
+            line-height: 153.2%
+
+        &__text
+            font-size: 14px
+
+        &__right
+            margin-bottom: 110px
+
+    .footer
+        &__bottom
+            display: flex
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+            height: 143px
+
+        &__right
+            margin: 43px 0 40px 0
+
+        &__left
+            margin-bottom: 9px
+
+    .breadcrumbs
+        flex-direction: column
+        justify-content: flex-start
+        &_cart
+            justify-content: center
+        &_registration
+            justify-content: center
+
+        &__heading
+            margin-top: 24px
+            margin-bottom: 32px
+
+    .filter-sort
+        margin-top: 12px
+
+    .filter
+        width: 0
+        &__summary
+            display: none
+        &__svg
+            &_desc
+                display: none
+            &_mob
+                display: block
+
+    .sort
+        &__summary
+            font-size: 12px
+            line-height: 14px
+
+    .product
+        margin-bottom: 64px
+
+        &__summary
+            font-size: 10px
+            line-height: 12px
+
+    .lots
+        &__cardbox_product
+            margin-bottom: 64px
+
+    .cart
+        +centerColumns()
+        &__left
+            +centerColumns()
+            margin-bottom: 48px
+        &__box
+            height: 188px
+            margin-bottom: 32px
+            max-width: 358px
+
+        &__customize
+            font-size: 14px
+            line-height: 17px
+            &_price
+                font-size: 14px
+                line-height: 17px
+            &_quantity
+                width: 24px
+                height: 14px
+                font-size: 14px
+                line-height: 17px
+
+        &__filling
+            padding: 14px 12px 34px 16px
+            &_top
+                margin-bottom: 26px
+            &_heading
+                font-size: 16px
+                line-height: 19px
+                width: 143px
+
+            &_text
+                font-size: 14px
+                line-height: 17px
+
+        &__exit
+            margin-left: 20px
+            margin-top: 4px
+            &_desc
+                display: none
+            &_mob
+                display: block
+
+        &__characteristics
+            margin-bottom: 4px
+
+        &__buttons
+            margin-top: 0
+            gap: 9px
+
+        &__action
+            font-size: 12px
+            line-height: 14px
+            padding: 8px 18px
+
+        &__right
+            +centerColumns()
+
+    .registration
+        padding-top: 40px
+        display: flex
+        flex-direction: column
+        gap: 40px
+
+@media ( max-width: 425px )
+    .center
+        padding-left: 8px
+        padding-right: 8px

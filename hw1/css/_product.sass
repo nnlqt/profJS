@@ -1,0 +1,137 @@
+.breadcrumbs
+    margin-bottom: 0
+
+.slider
+    position: relative
+    overflow: hidden
+
+    &__wrapper
+        display: flex
+        transition: transform 0.6s ease
+
+    &__item
+        flex: 0 0 100%
+        max-width: 100%
+        background: #F7F7F7
+
+    &__control
+        position: absolute
+        top: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 48px
+        background-color: rgba(42, 42, 42, 0.15)
+        text-align: center
+        opacity: 0.5
+        height: 48px
+        transform: translateY(-50%)
+        background: rgba(0, 0, 0, .5)
+
+    &__control_left
+        left: 0
+
+    &__control_right
+        right: 0
+
+    &__control:hover path
+        fill: $selectColor
+
+    &__item>div
+        line-height: 250px
+        font-size: 100px
+        text-align: center
+        height: 742px
+        margin-top: 12px
+        margin-bottom: 42px
+
+.product
+    +centerColumns()
+    max-width: $widthSite
+    border: 1px solid #EAEAEA
+    position: relative
+    z-index: 1
+    top: -64px
+    background: #ffffff
+
+    &__group
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+        padding-top: 64px
+        padding-bottom: 12px
+
+    &__heading
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+        padding-top: 12px
+        padding-bottom: 48px
+
+    &__text
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+        max-width: $widthSite / 2
+        padding-bottom: 32px
+
+    &__price
+        font-style: normal
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #EF5B70
+        padding-bottom: 64px
+
+    &__buttom
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-top: 64px
+        gap: $gap
+
+    &__choose
+        margin-bottom: 48px
+
+    &__summary
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+    &__img
+        margin-left: 8px
+
+    &__button
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #F26376
+        border: 1px solid #FF6A6A
+        padding: 10px 38px
+        text-decoration: none
+        margin-bottom: 64px
+        transition: all .5s
+        &:hover
+            background: $selectColor
+            color: #FFFFFF
+        &:hover path
+            fill: #FFFFFF
+
+    &__cart
+        margin-right: 24px
+
+.lots__cardbox
+    margin-top: 64px
+    margin-bottom: 128px
